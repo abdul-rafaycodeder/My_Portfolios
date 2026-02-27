@@ -7,7 +7,69 @@
 body{
     font-family: 'Poppins', sans-serif;
     background:#f4f6f9;
-    color:#222;
+    color: white;
+    background-color: rgb(21, 6, 29);
+}
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 8%;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:800;
+    
+}
+
+.logo span{
+    color:#c14bff;
+}
+
+.nav-links{
+    border: 1px solid white;
+    display:flex;
+    gap:35px;
+    background:rgba(255,255,255,0.05);
+    padding:12px 30px;
+    border-radius:40px;
+    backdrop-filter: blur(10px);
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#fff;
+    font-size: 17px;
+    font-weight:400;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#c14bff;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.contact-btn{
+    padding:10px 25px;
+    border-radius:30px;
+    border:1px solid rgba(255,255,255,0.2);
+    text-decoration:none;
+    color:#fff;
+    transition:0.3s;
+}
+
+.contact-btn:hover{
+    background:#c14bff;
+    border:none;
 }
 
 /* Section */
@@ -36,7 +98,7 @@ body{
 }
 
 .section-title p{
-    color:#666;
+    color:#ffffff;
     max-width:700px;
     margin:auto;
 }
@@ -67,7 +129,7 @@ body{
 
 .about-desc{
     font-style:italic;
-    color:#555;
+    color:#ffffff;
     margin-bottom:25px;
 }
 
@@ -81,7 +143,7 @@ body{
 
 .info-grid p{
     margin-bottom:15px;
-    color:#333;
+    color:#ffffff;
 }
 
 .info-grid span{
@@ -93,7 +155,7 @@ body{
 /* Footer Text */
 
 .about-footer{
-    color:#555;
+    color:#ffffff;
     line-height:1.7;
 }
 
