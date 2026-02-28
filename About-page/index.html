@@ -204,48 +204,92 @@
     </div>
   </section>
 
-  <section class="testimonials-section">
+<section class="testimonials-section">
     <div class="container">
       <h2>Testimonials</h2>
       <div class="subtitle-line"></div>
-
+      
       <p class="description">
         Necessitatibus eius consequatur ex aliquid fuga eum quidem sint<br>
         consectetur velit
       </p>
 
-      <div class="testimonial-carousel">
-        <!-- Single testimonial (you can duplicate this block for more) -->
-        <div class="testimonial active">
-          <div class="stars">★★★★★</div>
-
-          <div class="quote">
-            <span class="open-quote">“</span>
-            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
-            suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget
-            nibh et. Maecenas aliquam, risus at semper.
-            <span class="close-quote">”</span>
+      <!-- Slider -->
+      <div class="slider-wrapper">
+        <button class="arrow left-arrow">&lt;</button>
+        
+        <div class="testimonials-slider" id="slider">
+          <!-- Slide 1 -->
+          <div class="testimonial-slide active">
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Saul Goodman" class="avatar">
+              <h4>Saul Goodman</h4>
+              <p class="role">CEO & Founder</p>
+              <blockquote>
+                "Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. 
+                Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecenas aliquam, risus at semper."
+              </blockquote>
+            </div>
           </div>
 
-          <div class="author">
-            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Saul Goodman" class="avatar">
-            <div class="author-info">
-              <h4>Saul Goodman</h4>
-              <p>Ceo & Founder</p>
+          <!-- Slide 2 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Wilson" class="avatar">
+              <h4>Sarah Wilson</h4>
+              <p class="role">Product Director</p>
+              <blockquote>
+                "Exceptional service and attention to detail. The team delivered exactly what we needed — and faster than expected."
+              </blockquote>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Michael Chen" class="avatar">
+              <h4>Michael Chen</h4>
+              <p class="role">CTO at TechNova</p>
+              <blockquote>
+                "Truly professional approach. They understood our complex requirements and turned them into a beautiful product."
+              </blockquote>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="stars">★★★★☆</div>
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emma Davis" class="avatar">
+              <h4>Emma Davis</h4>
+              <p class="role">Marketing Lead</p>
+              <blockquote>
+                "Great communication throughout the project. Very happy with the final result and would work with them again."
+              </blockquote>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <img src="https://randomuser.me/api/portraits/men/91.jpg" alt="James Carter" class="avatar">
+              <h4>James Carter</h4>
+              <p class="role">Startup Founder</p>
+              <blockquote>
+                "They took our vague idea and turned it into a polished, user-friendly application. Highly recommended!"
+              </blockquote>
             </div>
           </div>
         </div>
 
-        <!-- You can add more testimonials here -->
-      </div>
+        <button class="arrow right-arrow">&gt;</button>
 
-      <!-- Dots (for future multi-slide support) -->
-      <div class="dots">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+        <!-- Dots -->
+        <div class="dots" id="dots"></div>
       </div>
     </div>
   </section>

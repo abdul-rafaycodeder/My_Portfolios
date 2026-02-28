@@ -71,5 +71,5 @@ document.addEventListener('DOMContentLoaded', () => {
   // }, 6000);
 
   // Show first one
-  showTestimonial(0);
+  showTestimonial();
 }); 
