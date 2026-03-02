@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(21, 6, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* nabar */
+
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 8%;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:800;
+    
+}
+
+.logo span{
+    color:#c14bff;
+}
+
+.nav-links{
+    border: 1px solid white;
+    display:flex;
+    gap:35px;
+    background:rgba(255,255,255,0.05);
+    padding:12px 30px;
+    border-radius:40px;
+    backdrop-filter: blur(10px);
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#fff;
+    font-size: 17px;
+    font-weight:400;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#c14bff;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.contact-btn{
+    padding:10px 25px;
+    border-radius:30px;
+    border:1px solid rgba(255,255,255,0.2);
+    text-decoration:none;
+    color:#fff;
+    transition:0.3s;
+}
+
+.contact-btn:hover{
+    background:#c14bff;
+    border:none;
+}
+
+.services {
+    width: 100%;
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #f3f3f3;
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: #fff;
+}
+
+/* Icon Colors */
+.blue { background: #0dcaf0; }
+.orange { background: #fd7e14; }
+.green { background: #20c997; }
+.red { background: #dc3545; }
+.purple { background: #6f42c1; }
+.pink { background: #e83e8c; }
+
+h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #111;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
