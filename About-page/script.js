@@ -57,8 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
     current = index;
   }
 
-
-  
   // Click on dots
   dots.forEach((dot, index) => {
     dot.addEventListener('click', () => {
