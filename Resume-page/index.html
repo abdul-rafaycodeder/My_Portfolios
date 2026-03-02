@@ -4,24 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume page</title>
+    <title>Resume Section</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <section class="resume-section">
-        <div class="resume-container">
 
-            <!-- LEFT SIDE -->
+    <header class="navbar">
+        <div class="logo">Abdul rafay<span>.</span></div>
+
+        <nav class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../About-page/index.html">About me</a>
+            <a href="../Resume-page/index.html">Resume</a>
+            <a href="#">Services</a>
+            <a href="#">My Work</a>
+            <a href="#">Contact me</a>
+        </nav>
+
+        <div class="nav-right">
+            <button class="theme-toggle">☀</button>
+            <a href="#" class="contact-btn">Contact ↗</a>
+        </div>
+    </header>
+
+    <section class="resume-section">
+        <div class="container">
+
+            <!-- LEFT COLUMN -->
             <div class="resume-column">
 
-                <h2 class="section-title">Summary</h2>
+                <h2>Summary</h2>
 
                 <div class="timeline-item">
                     <h3>BRANDON JOHNSON</h3>
                     <p class="italic">
-                        Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and
-                        developing user-centered digital/print marketing material.
+                        Innovative and deadline-driven Graphic Designer with 3+ years of experience.
                     </p>
                     <ul>
                         <li>Portland par 127, Orlando, FL</li>
@@ -30,7 +48,7 @@
                     </ul>
                 </div>
 
-                <h2 class="section-title">Education</h2>
+                <h2>Education</h2>
 
                 <div class="timeline-item">
                     <h3>MASTER OF FINE ARTS & GRAPHIC DESIGN</h3>
@@ -46,30 +64,30 @@
 
             </div>
 
-            <!-- RIGHT SIDE -->
+            <!-- RIGHT COLUMN -->
             <div class="resume-column">
 
-                <h2 class="section-title">Professional Experience</h2>
+                <h2>Professional Experience</h2>
 
                 <div class="timeline-item">
                     <h3>SENIOR GRAPHIC DESIGN SPECIALIST</h3>
                     <span class="year">2019 - Present</span>
-                    <p><em>Experion, New York, NY</em></p>
+                    <p class="italic">Experion, New York, NY</p>
                     <ul>
-                        <li>Lead in the design, development, and implementation of graphic materials</li>
-                        <li>Supervise quality and accuracy of designs</li>
-                        <li>Manage project budgets up to $25,000</li>
+                        <li>Lead in design and implementation of graphics</li>
+                        <li>Delegate tasks to design team members</li>
+                        <li>Supervise quality of materials</li>
                     </ul>
                 </div>
 
                 <div class="timeline-item">
                     <h3>GRAPHIC DESIGN SPECIALIST</h3>
                     <span class="year">2017 - 2018</span>
-                    <p><em>Stepping Stone Advertising, NY</em></p>
+                    <p class="italic">Stepping Stone Advertising, NY</p>
                     <ul>
-                        <li>Developed marketing programs and branding materials</li>
+                        <li>Developed marketing programs</li>
                         <li>Managed multiple projects under pressure</li>
-                        <li>Created client presentations and proposals</li>
+                        <li>Created presentations for clients</li>
                     </ul>
                 </div>
 
@@ -77,7 +95,75 @@
 
         </div>
     </section>
-    
+
+    <!-- Footer section -->
+ <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+
+        <!-- About Section -->
+        <div class="footer-col">
+          <h2 class="footer-logo">RafayTech</h2>
+          <p>
+            We create modern digital experiences with clean design,
+            smooth animations and powerful functionality.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./index.html">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="">Web Design</a></li>
+            <li><a href="#">Development</a></li>
+            <li><a href="#">UI/UX Design</a></li>
+            <li><a href="#">SEO Optimization</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-col">
+          <h3>Subscribe</h3>
+          <form class="newsletter">
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+          </form>
+
+          <div class="social-icons">
+            <a href="https://www.youtube.com/@InsideTheFactory10" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=61577331821573" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="https://www.instagram.com/_lisa_112233/" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 RafayTech. All Rights Reserved.</p>
+      </div>
+
+      <!-- Scroll To Top -->
+      <a href="#" class="scroll-top">↑</a>
+    </footer>
 </body>
 
 </html>
