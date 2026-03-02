@@ -73,3 +73,71 @@ document.addEventListener('DOMContentLoaded', () => {
   // Show first one
   showTestimonial();
 }); 
+
+
+const slider = document.getElementById("slider");
+const slides = document.querySelectorAll(".testimonial-slide");
+const dotsContainer = document.getElementById("dots");
+const leftArrow = document.querySelector(".left-arrow");
+const rightArrow = document.querySelector(".right-arrow");
+
+let index = 0;
+let autoSlide;
+
+// Create Dots
+slides.forEach((_, i) => {
+  const dot = document.createElement("span");
+  dot.addEventListener("click", () => {
+    index = i;
+    updateSlider();
+  });
+  dotsContainer.appendChild(dot);
+});
+
+function updateSlider() {
+  slider.style.transform = `translateX(-${index * 100}%)`;
+
+  document.querySelectorAll(".dots span").forEach(dot => {
+    dot.classList.remove("active-dot");
+  });
+
+  dotsContainer.children[index].classList.add("active-dot");
+}
+
+// Next Slide
+function nextSlide() {
+  index++;
+  if (index >= slides.length) {
+    index = 0;
+  }
+  updateSlider();
+}
+
+// Previous Slide
+function prevSlide() {
+  index--;
+  if (index < 0) {
+    index = slides.length - 1;
+  }
+  updateSlider();
+}
+
+// Button Events
+rightArrow.addEventListener("click", nextSlide);
+leftArrow.addEventListener("click", prevSlide);
+
+// Auto Slide
+function startAutoSlide() {
+  autoSlide = setInterval(nextSlide, 4000);
+}
+
+function stopAutoSlide() {
+  clearInterval(autoSlide);
+}
+
+// Pause on Hover
+slider.addEventListener("mouseenter", stopAutoSlide);
+slider.addEventListener("mouseleave", startAutoSlide);
+
+updateSlider();
+startAutoSlide();
