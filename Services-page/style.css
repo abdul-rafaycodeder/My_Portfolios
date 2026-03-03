@@ -6,73 +6,73 @@
 }
 
 body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(21, 6, 29);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: #fff;
     min-height: 100vh;
 }
+
 
 /* nabar */
 
 
-.navbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:25px 8%;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
 }
 
-.logo{
-    font-size:28px;
-    font-weight:800;
-    
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+
 }
 
-.logo span{
-    color:#c14bff;
+.logo span {
+    color: #c14bff;
 }
 
-.nav-links{
+.nav-links {
     border: 1px solid white;
-    display:flex;
-    gap:35px;
-    background:rgba(255,255,255,0.05);
-    padding:12px 30px;
-    border-radius:40px;
+    display: flex;
+    gap: 35px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px 30px;
+    border-radius: 40px;
     backdrop-filter: blur(10px);
 }
 
-.nav-links a{
-    text-decoration:none;
-    color:#fff;
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
     font-size: 17px;
-    font-weight:400;
-    transition:0.3s;
+    font-weight: 400;
+    transition: 0.3s;
 }
 
-.nav-links a:hover{
-    color:#c14bff;
+.nav-links a:hover {
+    color: #c14bff;
 }
 
-.nav-right{
-    display:flex;
-    align-items:center;
-    gap:20px;
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.contact-btn{
-    padding:10px 25px;
-    border-radius:30px;
-    border:1px solid rgba(255,255,255,0.2);
-    text-decoration:none;
-    color:#fff;
-    transition:0.3s;
+.contact-btn {
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
 }
 
-.contact-btn:hover{
-    background:#c14bff;
-    border:none;
+.contact-btn:hover {
+    background: #c14bff;
+    border: none;
 }
 
 .services {
@@ -113,12 +113,29 @@ body {
 }
 
 /* Icon Colors */
-.blue { background: #0dcaf0; }
-.orange { background: #fd7e14; }
-.green { background: #20c997; }
-.red { background: #dc3545; }
-.purple { background: #6f42c1; }
-.pink { background: #e83e8c; }
+.blue {
+    background: #0dcaf0;
+}
+
+.orange {
+    background: #fd7e14;
+}
+
+.green {
+    background: #20c997;
+}
+
+.red {
+    background: #dc3545;
+}
+
+.purple {
+    background: #6f42c1;
+}
+
+.pink {
+    background: #e83e8c;
+}
 
 h3 {
     margin-bottom: 15px;
